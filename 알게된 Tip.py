@@ -12,3 +12,7 @@ def gcd(a, b):
 
 #문자열 거꾸로
 ''.join(reversed(list(str)))
+
+#알파벳인가 아닌가
+print('a'.isalpha())
+
