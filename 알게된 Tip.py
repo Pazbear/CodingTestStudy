@@ -16,3 +16,5 @@ def gcd(a, b):
 #알파벳인가 아닌가
 print('a'.isalpha())
 
+#dict value로 정렬  내림차순
+sorted(dict.items(), key=lambda a:a[1], reverse=True)
