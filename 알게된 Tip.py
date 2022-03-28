@@ -21,6 +21,11 @@ sorted(dict.items(), key=lambda a:a[1], reverse=True)
 
 #배열 안에 중복된 값이 있는지 판단
 if len(arr) == len(set(arr)):
-    return True
+    res= True
 else:
-    return False
+    res= False
+
+#2차원 배열 90도 돌리기
+for i in range(n):
+    for j in range(m):
+        result[j][n-i-1] = a[i][j]
