@@ -18,3 +18,9 @@ print('a'.isalpha())
 
 #dict value로 정렬  내림차순
 sorted(dict.items(), key=lambda a:a[1], reverse=True)
+
+#배열 안에 중복된 값이 있는지 판단
+if len(arr) == len(set(arr)):
+    return True
+else:
+    return False
