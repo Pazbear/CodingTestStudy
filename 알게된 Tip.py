@@ -29,3 +29,9 @@ else:
 for i in range(n):
     for j in range(m):
         result[j][n-i-1] = a[i][j]
+
+#x의 제곱
+print(x ** 3) # x의 3제곱
+
+#2진수 변환
+print(bin(301))
