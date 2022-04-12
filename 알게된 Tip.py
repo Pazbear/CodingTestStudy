@@ -35,3 +35,10 @@ print(x ** 3) # x의 3제곱
 
 #2진수 변환
 print(bin(301))
+
+#두 직선의 교점
+print("Ax + By + E = 0")
+print("Cx + Dy + F = 0")
+print("두 직선의 교점은 ")
+print("x = (B*F - E*D) / (A*D - B*C) ")
+print("y = (E*C - A*F) / (A*D - B*C) ")
