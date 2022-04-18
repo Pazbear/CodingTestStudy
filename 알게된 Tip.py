@@ -42,3 +42,13 @@ print("Cx + Dy + F = 0")
 print("두 직선의 교점은 ")
 print("x = (B*F - E*D) / (A*D - B*C) ")
 print("y = (E*C - A*F) / (A*D - B*C) ")
+
+#얇은 복사, 깊은 복사
+import copy
+a=1
+b=a
+if a is b:
+    print("true - 얇은 복사(메모리 주소가 같음)")
+b = copy.deepcopy(a)
+if a is b:
+    print("false - 깊은 복사(메모리 주소 다름)")
