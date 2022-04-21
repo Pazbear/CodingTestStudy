@@ -52,3 +52,6 @@ if a is b:
 b = copy.deepcopy(a)
 if a is b:
     print("false - 깊은 복사(메모리 주소 다름)")
+
+#값이 비정상적으로 커 효율성을 중시하는 문제처럼 보일 경우
+#이분탐색을 고려해봐야함
