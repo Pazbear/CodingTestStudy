@@ -64,3 +64,8 @@ import re
 
 #bfs,dfs 시 board 의 예외처리 편의를 위해
 #일부러 상하좌우에 한줄의 board를 더 추가함으로써 좌표가 -1이 되었을때의 indexerr를 무시함.
+
+
+#가장 큰 정사각형 찾기 (dp)
+board[i][j] = min(board[i-1][j-1], min(board[i][j-1],board[i-1][j]))+1
+#으로 dp 배열을 만든 후 가장 큰 수를 제곱
