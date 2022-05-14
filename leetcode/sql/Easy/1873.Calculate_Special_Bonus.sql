@@ -1,0 +1,1 @@
+select employee_id,case When employee_id % 2 = 1 and left(name, 1)!= 'M' then salary else 0 end as 'bonus' from Employees;
