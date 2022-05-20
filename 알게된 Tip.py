@@ -95,3 +95,9 @@ heapq.heapify(a) # => a = [7,5,3,1]
 
 #정렬 기준 여러개
 sorted(arr, key = lambda x : (x[0], x[1]))
+#-를 붙이면 정렬 순서 반대로
+sorted(arr, key = lambda x : (x[0], -x[1]))
+
+
+#리스트 역순
+res=res[::-1]
