@@ -101,3 +101,12 @@ sorted(arr, key = lambda x : (x[0], -x[1]))
 
 #리스트 역순
 res=res[::-1]
+
+#하노이의 탑
+def hanoi(n, from_p, to_p, inter_p, answer): #def(1,3,2)
+    if n==1:
+        print([from_p, to_p])
+        return
+    hanoi(n-1, from_p, inter_p, to_p, answer) #(1,2,3)
+    print([from_p, to_p])
+    hanoi(n-1, inter_p, to_p, from_p,answer) #(2,3,1)
