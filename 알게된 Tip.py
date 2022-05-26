@@ -110,3 +110,7 @@ def hanoi(n, from_p, to_p, inter_p, answer): #def(1,3,2)
     hanoi(n-1, from_p, inter_p, to_p, answer) #(1,2,3)
     print([from_p, to_p])
     hanoi(n-1, inter_p, to_p, from_p,answer) #(2,3,1)
+    
+#첫글자를 대문자로
+string.title()
+string.capitalize()
