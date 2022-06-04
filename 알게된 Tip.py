@@ -114,3 +114,8 @@ def hanoi(n, from_p, to_p, inter_p, answer): #def(1,3,2)
 #첫글자를 대문자로
 string.title()
 string.capitalize()
+
+#filter 함수
+#예
+cntzero = nums.count(0)
+nums[:] = list(filter(lambda x : x!=0, nums))+cntzero*[0]
