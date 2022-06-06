@@ -119,3 +119,10 @@ string.capitalize()
 #예
 cntzero = nums.count(0)
 nums[:] = list(filter(lambda x : x!=0, nums))+cntzero*[0]
+
+
+##일정 금액을 만드는 코인의 최소 개수 구하기
+#DP 사용
+#x까지 도달하는 개수 중 가장 작은 수를 구함
+for x in range(1, amount+1):
+    dp[x] = min(dp[x-c] if x-c >= 0 else inf for c in coins)+1
