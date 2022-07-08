@@ -130,3 +130,9 @@ for x in range(1, amount+1):
 
 #누적합 예
 #프로그래머스 Lv.3 파괴되지 않은 건물
+
+#이분탐색
+import bisect
+lst = [1,5,5,5,5,5,5,7]
+bisect.bisect_left(lst, 5) # 1
+bisect.bisect_right(lst, 5) # 6
