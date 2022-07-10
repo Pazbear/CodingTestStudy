@@ -12,4 +12,3 @@ def solution(nums):
         if prime_nums[sum(combi_nums)] == 0:
             answer+=1
     return answer
-
