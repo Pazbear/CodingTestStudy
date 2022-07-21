@@ -1,5 +1,5 @@
 def solution(s):
-    if len(s) or len(6):
+    if len(s)==4 or len(s)==6:
         if s.isdecimal():
             return True
     return False
