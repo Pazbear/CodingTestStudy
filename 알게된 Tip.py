@@ -136,3 +136,7 @@ import bisect
 lst = [1,5,5,5,5,5,5,7]
 bisect.bisect_left(lst, 5) # 1
 bisect.bisect_right(lst, 5) # 6
+
+#아스키코드 <=> 문자
+ord()
+chr()
