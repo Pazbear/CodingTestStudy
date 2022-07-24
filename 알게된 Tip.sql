@@ -19,3 +19,9 @@ Delete a from A as a, A as b where a < b
 --LCASE:소문자로, UCASE : 대문자로
 --CONCAT(a, b) = a + b : 문자열 합치기
 select user_id, CONCAT(UCASE(LEFT(name,1)), LCASE(SUBSTRING(name, 2))) as 'name' from Users order by user_id;
+
+--랭크 매기기
+select score, DENSE_RANK() OVER (order by score DESC) as 'rank' from Scores;
+select score, ROW_NUMBER() OVER (order by score DESC) as 'rank' from Scores;
+select score, RANK() OVER (order by score DESC) as 'rank' from Scores;
+--score에 따라 랭크 매김
